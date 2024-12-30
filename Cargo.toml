@@ -1,0 +1,11 @@
+[package]
+name = "rust_image_processing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+usls = { version = "0.0.20", features = ["auto"] }
+clap = { version = "4.5.23", features = ["derive"] }
+anyhow = { version = "1.0.94" }
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
