@@ -22,7 +22,7 @@ pub struct Args {
     pub task: YOLOTask,
 
     /// YOLO Version
-    #[arg(long, value_enum, default_value_t = YOLOVersion::V8)]
+    #[arg(long, value_enum, default_value_t = YOLOVersion::V11)]
     pub ver: YOLOVersion,
 
     /// YOLO Scale
@@ -165,7 +165,7 @@ fn main() -> Result<()> {
         .with_profile(args.profile);
 
     // build model
-    let mut model = YOLO::new(options)?;
+    let mut model = YOLO::new(options)?;    
 
     // build dataloader
     let dl = DataLoader::new(&args.source)?

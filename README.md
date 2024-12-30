@@ -5,11 +5,15 @@ https://github.com/jamjamjon/assets/releases/tag/yolo
 https://github.com/jamjamjon/assets/releases/download/yolo/v11-n-pose.onnx
 
 ```
-
 sudo apt-get install libavfilter-dev libavutil-dev libavformat-dev libavdevice-dev libclang-dev
 cargo build
 cargo run 
 cargo run -r -- --task pose --ver v11 --scale n --model ./models/v11-m-pose.onnx  --source ./assets/bus.jpg
+```
+
+
+```
+# Usage: rust_image_processing <--model <MODEL>|--source <SOURCE>|--task <TASK>|--ver <VER>|--scale <SCALE>|--batch-size <BATCH_SIZE>|--width-min <WIDTH_MIN>|--width <WIDTH>|--width-max <WIDTH_MAX>|--height-min <HEIGHT_MIN>|--height <HEIGHT>|--height-max <HEIGHT_MAX>|--nc <NC>|--confs <CONFS>|--trt|--cuda|--coreml|--half|--device-id <DEVICE_ID>|--profile|--no-contours|--view|--nosave>
 ```
 
 
